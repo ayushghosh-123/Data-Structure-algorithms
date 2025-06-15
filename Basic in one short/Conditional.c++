@@ -34,6 +34,19 @@ int main(){
 
 
     // nested else-if
-    
+    int age ;
+    cin >> age;
+    if(age < 18){
+        cout << "not eligible for job";
+    }
+    else if(age <=54){
+        cout << "eligible for job";
+        if( age >= 55){
+            cout << "but retirement soon";
+        }
+    }
+    else{
+        cout << "retirement true";
+    }
     return 0;
 }
